@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="155"
+   viewBox="0 0 155 155"
+   role="img"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="logo_alone.svg"
+   height="155"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   inkscape:export-filename="logo.png"
+   inkscape:export-xdpi="309.67743"
+   inkscape:export-ydpi="309.67743"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.5601647"
+     inkscape:cx="75.633041"
+     inkscape:cy="123.06393"
+     inkscape:window-width="1496"
+     inkscape:window-height="841"
+     inkscape:window-x="7"
+     inkscape:window-y="41"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <title
+     id="title1">
+        Bolt logo with white background
+    </title>
+  <desc
+     id="desc1">
+        The Bolt logo on a solid white background rectangle so the black wordmark stays visible in dark mode READMEs.
+    </desc>
+  <circle
+     cx="78.432495"
+     cy="77.073456"
+     r="70"
+     fill="none"
+     stroke="#7D97CE"
+     stroke-width="10"
+     style="color:#0b0b0b;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#7d97ce;stroke-width:10px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle1" />
+  <g
+     transform="matrix(0.95,0,0,0.95,29.9825,-8.4265421)"
+     style="color:#0b0b0b;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g2">
+    <g
+       transform="rotate(12,51,90)"
+       style="color:#0b0b0b;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="g1">
+      <path
+         d="M 62,8 2,96 H 40 L 26,172 100,76 H 58 Z"
+         fill="#7D97CE"
+         stroke="#111111"
+         stroke-width="3"
+         stroke-linejoin="round"
+         style="color:#0b0b0b;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#7d97ce;stroke:#111111;stroke-width:3px;stroke-linecap:butt;stroke-linejoin:round"
+         id="path1" />
+    </g>
+  </g>
+  <metadata
+     id="metadata2">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>
+        Bolt logo with white background
+    </dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

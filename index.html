@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>Bolt</title>
+    <meta charset='UTF-8'>
+    <link rel='icon' type='image/x-icon' href='favicon.ico'>
+    <link rel='icon' type='image/png' sizes='32x32' href='favicon-32.png'>
+    <link rel='apple-touch-icon' href='apple-touch-icon.png'>
+    <meta name='viewport' content='width=device-width'>
+    <link href='https://fonts.googleapis.com/css?family=JetBrains+Mono' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+<div class='bolt-nav-wrapper'>
+    <div class='bolt-nav'>
+        <a href='#' class='logo-wrapper'>
+            <img src='assets/logo.png' width='50'>
+            <span class='logo'>Bolt</span>
+        </a>
+        <div class='bolt-nav-items'>
+            <a href='#demos' class='link'>
+                Demos
+            </a>
+            <a href='#paper' class='link'>
+                Paper
+            </a>
+<!--            <a href='#faq' class='link'>-->
+<!--                FAQ-->
+<!--            </a>-->
+            <a target="_blank" href='https://github.com/willwng/bolt' class='gh'>
+                <img src='assets/github-mark.svg' alt='GitHub'>
+            </a>
+        </div>
+    </div>
+</div>
+
+<section id='video'>
+    <div id='main-video-container'>
+        <video autoplay muted playsinline width='720' height='405' poster='assets/thumbnail.png'>
+            <source src='assets/zoomout.mp4' type='video/mp4'/>
+        </video>
+        <button class='replay'><img src='assets/replay.svg' alt='replay'></button>
+        <p class="emph">Examples of several reinforcement learning (RL) control policies trained on top of Bolt. Each
+            policy trained in under a day on a single GPU.</p>
+    </div>
+</section>
+
+<section id='intro' class='info-section'>
+    <div class='content'>
+        <p class='detail blurb'>
+            <b>Bolt</b> is a <b>GPU-accelerated musculoskeletal simulator</b> with native support for OpenSim models and
+            designed
+            for massively parallel (1k+) environments at hundreds-to-thousands times real-time
+            speed (in aggregate) on a single GPU.
+        </p>
+        <p class='detail blurb'>
+            Implementations of RL environments using Bolt are
+            available
+            <a target="_blank" href='https://github.com/willwng/msk_envs' class='link'>here</a>.
+        </p>
+    </div>
+</section>
+
+<section id='demos' class='info-section'>
+    <h1>Demos</h1>
+    <div class='content'>
+        <p class='detail blurb'>
+            The following motions were generated <b>without any motion demonstrations</b>, using only a simple reward
+            function: maximize speed without hyperextending joints. Diverse behavior is obtained via task-specific
+            episode termination conditions.
+        </p>
+        <div class='demo-grid'>
+            <div class='demo-item'>
+                <video autoplay muted loop playsinline preload='metadata'>
+                    <source src='assets/demos/sprint.mp4' type='video/mp4'/>
+                </video>
+                <p class='demo-caption'>Sprint</p>
+            </div>
+            <div class='demo-item'>
+                <video autoplay muted loop playsinline preload='metadata'>
+                    <source src='assets/demos/curve.mp4' type='video/mp4'/>
+                </video>
+                <p class='demo-caption'>Run the Bend</p>
+            </div>
+            <div class='demo-item'>
+                <video autoplay muted loop playsinline preload='metadata'>
+                    <source src='assets/demos/hurdles.mp4' type='video/mp4'/>
+                </video>
+                <p class='demo-caption'>Hurdles</p>
+            </div>
+            <div class='demo-item'>
+                <video autoplay muted loop playsinline preload='metadata'>
+                    <source src='assets/demos/backpedal.mp4' type='video/mp4'/>
+                </video>
+                <p class='demo-caption'>Backpedal</p>
+            </div>
+            <div class='demo-item'>
+                <video autoplay muted loop playsinline preload='metadata'>
+                    <source src='assets/demos/sideshuffle.mp4' type='video/mp4'/>
+                </video>
+                <p class='demo-caption'>Side Shuffle</p>
+            </div>
+            <div class='demo-item'>
+                <video autoplay muted loop playsinline preload='metadata'>
+                    <source src='assets/demos/carioca.mp4' type='video/mp4'/>
+                </video>
+                <p class='demo-caption'>Carioca</p>
+            </div>
+            <div class='demo-item'>
+                <video autoplay muted loop playsinline preload='metadata'>
+                    <source src='assets/demos/hop.mp4' type='video/mp4'/>
+                </video>
+                <p class='demo-caption'>One-Legged Hop</p>
+            </div>
+            <div class='demo-item'>
+                <video autoplay muted loop playsinline preload='metadata'>
+                    <source src='assets/demos/incline.mp4' type='video/mp4'/>
+                </video>
+                <p class='demo-caption'>Incline Run</p>
+            </div>
+            <div class='demo-item'>
+                <video autoplay muted loop playsinline preload='metadata'>
+                    <source src='assets/demos/vertical.mp4' type='video/mp4'/>
+                </video>
+                <p class='demo-caption'>Vertical Jump</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id='paper' class='info-section'>
+    <h1>Technical Paper</h1>
+    <div class='content'>
+        <p class='detail'>
+            Please refer to our SIGGRAPH Asia paper for a description of Bolt
+            and implementation of RL training environments using the simulator.
+        </p>
+
+        <div class='paper-block'>
+            <div class='paper-title-wrapper'>
+                <a class='paper-title'>
+                    Learning Realistic Athletic Sprinting Without Demonstrations
+                </a>
+            </div>
+            <div class='paper-details-wrapper'>
+                <div id='paper-details' class='paper-details'>
+                    <div class='authors'>
+                        <a target='_blank' href='https://williamywang.com'>William Wang</a>,
+                        <a target='_blank' href='https://nmbl.stanford.edu/people/nick-bianco/'>Nicholas Bianco</a>,
+                        <a target='_blank' href='https://guytevet.github.io'>Guy Tevet</a>,
+                        <a target='_blank' href='https://nmbl.stanford.edu/people/jen-hicks/'>Jennifer Hicks</a>,
+                        <a target='_blank' href='https://tml.stanford.edu/#people'>C. Karen Liu</a>,
+                        <a target='_blank' href='https://profiles.stanford.edu/scott-delp'>Scott Delp</a>,
+                        <a target='_blank' href='https://graphics.stanford.edu/~kayvonf/'>Kayvon Fatahalian</a>
+                    </div>
+                    <div class='conference'>
+                        To appear at SIGGRAPH Asia 2026
+                    </div>
+                </div>
+                <div id='paper-download'>
+                    <a href='' target='_blank'>
+                        <span class='pdf-download-icon material-symbols-outlined'>description</span>
+                        <div class='pdf-download-text'>PDF</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h3>Abstract</h3>
+        <p class='detail paper-abstract'>
+            We present a muscle-driven simulation system for generating biomechanically accurate motion for high-speed
+            athletic locomotion tasks that does not require motion demonstrations. Our approach integrates
+            state-of-the-art biomechanical athlete models into a new, high-performance GPU simulator capable of running
+            at 1000x real-time. High-throughput simulation enables large-batch reinforcement learning to train control
+            policies that operate directly in the model’s high-dimensional muscle excitation space, and are guided only
+            by task-specific episode termination conditions and a reward that encourages maximizing speed while reducing
+            forces needed to respect joint limits. These policies train within a few hours on a single GPU and generate
+            “near visually realistic” motions for complete athletic activities such as a full 100-meter sprint or
+            performing popular athletic locomotion drills like side-shuffling, backpedaling, and carioca. The generated
+            sprinting motions also exhibit strong agreement with experimental data captured from sprinters.
+        </p>
+
+        <h3>Citation</h3>
+        <pre class='citation'>
+            <code>
+@article{wang26bolt,
+    title   = {Learning Realistic Athletic Sprinting Without Demonstrations},
+    author  = {William Wang and Nicholas Bianco and Guy Tevet and
+               Jennifer Hicks and C. Karen Liu and Scott Delp and
+               Kayvon Fatahalian},
+    journal = {ACM Trans. Graph.},
+    volume  = {45},
+    number  = {6},
+    year    = {2026}
+}
+            </code>
+        </pre>
+    </div>
+</section>
+
+<!--<section id='faq' class='info-section'>-->
+<!--    <h1>FAQ</h1>-->
+<!--    <div class='content'>-->
+
+<!--        <h3>What's the best way to contact Bolt's developers?</h3>-->
+
+<!--        <p class='detail'>-->
+<!--            idk-->
+<!--        </p>-->
+
+<!--    </div>-->
+<!--</section>-->
+
+<p></p>
+
+<script src='main.js'></script>
+</body>
+</html>
