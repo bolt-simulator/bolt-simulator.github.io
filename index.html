@@ -8,30 +8,31 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@500;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=2">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@500;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 <main class="container">
+  <section class="landing">
   <header class="hero">
     <div class="hero-left">
       <h1 class="wordmark"><img src="assets/logo.png" alt="">Bolt</h1>
+      <p class="blurb"><b>Bolt</b> is a GPU-accelerated musculoskeletal simulator with native support for <a href="https://opensim.stanford.edu" target="_blank">OpenSim</a> models, designed to run massively parallel environments at hundreds-to-thousands of times real-time speed (in aggregate) on a single GPU.</p>
       <div class="gh-buttons">
         <a href="https://github.com/willwng/bolt" target="_blank"><img src="assets/github-mark.svg" alt="">Bolt</a>
         <a href="https://github.com/willwng/msk_envs" target="_blank"><img src="assets/github-mark.svg" alt="">RL Environments</a>
       </div>
     </div>
     <figure class="teaser">
-      <video autoplay muted playsinline loop poster="assets/thumbnail.png"><source src="assets/zoomout.mp4" type="video/mp4"></video>
-      <figcaption class="caption">Several RL control policies trained on top of Bolt. Each policy trained in under a day on a single GPU.</figcaption>
+      <video autoplay muted playsinline loop poster="assets/parallel_poster.jpg"><source src="assets/parallel.mp4" type="video/mp4"></video>
+      <figcaption class="caption">32,000 environments concurrently simulated on one GPU.</figcaption>
     </figure>
   </header>
 
-  <div class="intro">
-    <p><b>Bolt</b> is a GPU-accelerated musculoskeletal simulator with native support for <a href="https://opensim.stanford.edu" target="_blank">OpenSim</a> models, designed for massively parallel environments at hundreds to thousands of times real-time speed (in aggregate) on a single GPU.</p>
-  </div>
+  <a class="scroll-cue" href="#more">Scroll<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></a>
+  </section>
 
-  <div class="overview">
+  <div class="overview" id="more">
   <div class="points">
     <div><h3>Massively parallel</h3><p>Thousands of environments simulated at once on one GPU.</p></div>
     <div><h3>OpenSim support</h3><p>Natively supports many existing OpenSim models without modification.</p></div>
@@ -39,8 +40,8 @@
   </div>
 
   <figure class="parallel">
-    <video autoplay muted loop playsinline poster="assets/parallel_poster.jpg"><source src="assets/parallel.mp4" type="video/mp4"></video>
-    <figcaption class="caption">32,000 environments concurrently simulated on one GPU.</figcaption>
+    <video autoplay muted loop playsinline poster="assets/thumbnail.png"><source src="assets/zoomout.mp4" type="video/mp4"></video>
+    <figcaption class="caption">Several RL control policies trained on top of Bolt. Each policy trained in under a day on a single GPU.</figcaption>
   </figure>
   </div>
 
@@ -87,6 +88,6 @@
   </section>
 </main>
 
-<script src="main.js?v=2"></script>
+<script src="main.js?v=3"></script>
 </body>
 </html>
